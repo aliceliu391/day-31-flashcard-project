@@ -66,10 +66,10 @@ canvas.grid(column=0, row=0, columnspan=2)
 
 # Buttons
 right_img = PhotoImage(file="images/right.png")
-right_button = Button(image=right_img, highlightthickness=0, bg=BACKGROUND_COLOR, command=remove_card)
+right_button = Button(image=right_img, highlightthickness=0, bg=BACKGROUND_COLOR, command=remove_card, bd=0)
 right_button.grid(column=0, row=1)
 wrong_img = PhotoImage(file="./images/wrong.png")
-wrong_button = Button(image=wrong_img, highlightthickness=0, bg=BACKGROUND_COLOR, command=next_card)
+wrong_button = Button(image=wrong_img, highlightthickness=0, bg=BACKGROUND_COLOR, command=next_card, bd=0)
 wrong_button.grid(column=1, row=1)
 
 new_entry = random.choice(data_dict)
